@@ -7,3 +7,885 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+*{
+    margin: 0;
+    max-width: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--c-wg);
+
+}
+main{
+    display: block;
+
+}
+p{
+    font-family: var(--f-body);
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 19.99px;
+}
+@media (max-width: 575.99999px) {
+    body {
+        background-color: var(--c-wg);
+    }
+    header{
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-wit);
+    }
+    .EDP{
+        width: 40%;
+        padding-bottom: 2%;
+    }
+    .Search{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 20%;
+        padding-right: 2%;  
+    }
+    .button{
+        background-color:var(--c-dw);
+        border:thin solid var(--c-grijs);
+        border-radius: 25px 0 0 25px;
+        cursor:pointer;
+        float:left;
+        height:20px;
+        text-align:center;
+        width:50px;
+    }
+    .button:hover{
+        background-color: var(--c-grijs);
+    }
+    .button i{
+        margin:4px;
+        font-size: 12px; 
+    }
+    .zoeken{
+        border:thin solid  var(--c-grijs);
+        border-radius: 0 25px 25px 0;
+        float:left;
+        height:9.5px;
+        outline:0;
+        padding:.4em 0 .4em .6em; 
+        width:90px; 
+    }
+
+    .gebouwPic{
+        display: block;
+        height: 200px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .ronde{
+        padding: 1%;
+        width: 100%;
+
+    }
+    .circle{
+        float: left;
+        margin-left: 20%;
+
+    }
+    .dot1{
+        margin-top: 10%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-grijs);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dot{
+        margin-top: 10%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-rood);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        float: right;
+        margin: 14% 10% 0 0;        
+    }
+    .textblock{
+        margin: 0 6% 100% 6%;   
+        text-align: center;
+    }
+    .titel{
+        color: var(--c-rood);
+        font-weight: bold;
+        font-size: 10pt;
+        float: center;
+    }
+    .subtitel{
+        color: var(--c-grijs);
+        font-size: 8pt;
+
+    }
+    .aside{
+        background-color: var(--c-rood);
+        padding-top: 5%;
+        padding-bottom: 145%
+    }
+    .asidePic{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-dg);
+    }
+
+    footer .footerLogo{
+        margin-left: 30%;
+        margin-top: 1%;
+        position: relative;
+        height: 40%
+    }
+    footer .tekstFooter{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 9pt;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    
+   .fab{
+        font-size: 20px;
+        color: var(--c-grijs);
+        padding:1%;
+    }
+    .fa-facebook-square{
+        position: absolute;
+        padding-left: 4%;
+    }
+    .fa-twitter-square{
+        position: absolute;
+        padding-left: 10%;
+    }
+    .fa-instagram{
+        position: absolute;
+        padding-left: 16%; 
+    }
+    .fa-snapchat-square{
+        position: absolute;
+        padding-left: 22%;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99999px) {
+    body {
+        background-color: var(--c-wg);
+    }
+    header{
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-wit);
+    }
+    .EDP{
+        width: 40%;
+        padding-bottom: 2%;
+    }
+    .Search{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 30%;
+    }
+    .button{
+        background-color:var(--c-dw);
+        border:thin solid var(--c-grijs);
+        border-radius: 25px 0 0 25px;
+        cursor:pointer;
+        float:left;
+        height:20px;
+        text-align:center;
+        width:50px;
+    }
+    .button:hover{
+        background-color: var(--c-grijs);
+    }
+    .button i{
+        margin:4px;
+        font-size: 12px; 
+    }
+    .zoeken{
+        border:thin solid  var(--c-grijs);
+        border-radius: 0 25px 25px 0;
+        float:left;
+        height:9.5px;
+        outline:0;
+        padding:.4em 0 .4em .6em; 
+        width:100px; 
+    }
+
+    .gebouwPic{
+        display: block;
+        height: 200px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .ronde{
+        padding: 1%;
+        width: 100%;
+
+    }
+    .circle{
+        float: left;
+        margin-left: 10%;
+
+    }
+    .dot1{
+        margin-top: 10%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-grijs);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dot{
+        margin-top: 10%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-rood);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        float: right;
+        margin: 13% 40% 0 0;        
+    }
+    .textblock{
+        margin: 0 6% 95% 6%;   
+        text-align: center;
+    }
+    .titel{
+        color: var(--c-rood);
+        font-weight: bold;
+        font-size: 10pt;
+        float: center;
+    }
+    .subtitel{
+        color: var(--c-grijs);
+        font-size: 8pt;
+
+    }
+    .aside{
+        background-color: var(--c-rood);
+        padding-top: 5%;
+        padding-bottom: 105%
+    }
+    .asidePic{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-dg);
+    }
+
+    footer .footerLogo{
+        margin-left: 40%;
+        margin-top: 1%;
+        position: relative;
+        height: 60%
+    }
+    footer .tekstFooter{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 7%;
+        padding-right: 2%;
+    }
+    
+   .fab{
+        font-size: 30px;
+        color: var(--c-grijs);
+        padding:1%;
+    }
+    .fa-facebook-square{
+        position: absolute;
+        padding-left: 4%;
+    }
+    .fa-twitter-square{
+        position: absolute;
+        padding-left: 10%;
+    }
+    .fa-instagram{
+        position: absolute;
+        padding-left: 16%; 
+    }
+    .fa-snapchat-square{
+        position: absolute;
+        padding-left: 22%;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99999px) {
+    body {
+        background-color: var(--c-wg);
+    }
+    header{
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-wit);
+    }
+    .EDP{
+        width: 40%;
+        padding-bottom: 2%;
+    }
+    .Search{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 25%;
+    }
+    .button{
+        background-color:var(--c-dw);
+        border:thin solid var(--c-grijs);
+        border-radius: 25px 0 0 25px;
+        cursor:pointer;
+        float:left;
+        height:20px;
+        text-align:center;
+        width:50px;
+    }
+    .button:hover{
+        background-color: var(--c-grijs);
+    }
+    .button i{
+        margin:4px;
+        font-size: 12px; 
+    }
+    .zoeken{
+        border:thin solid  var(--c-grijs);
+        border-radius: 0 25px 25px 0;
+        float:left;
+        height:9.5px;
+        outline:0;
+        padding:.4em 0 .4em .6em; 
+        width:120px; 
+    }
+
+    .gebouwPic{
+        display: block;
+        height: 250px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .ronde{
+        padding: 1%;
+        width: 100%;
+
+    }
+    .circle{
+        display: flex;
+        justify-content: center;
+    }
+    .dot1{
+        margin: 2%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-grijs);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dot{
+        margin: 2%;
+        width: 120px;
+        height: 120px;
+        font-family: var(--f-special);
+        color: var(--c-rood);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+    .textblock{
+        margin-left: 6%;
+        margin-right: 6%;   
+        text-align: center;
+    }
+    .titel{
+        color: var(--c-rood);
+        font-weight: bold;
+        font-size: 10pt;
+        float: center;
+    }
+    .subtitel{
+        color: var(--c-grijs);
+        font-size: 8pt;
+
+    }
+    .aside{
+        background-color: var(--c-rood);
+        padding-top: 5%;
+        padding-bottom: 50%
+    }
+    .asidePic{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        background-color: var(--c-dg);
+    }
+
+    footer .footerLogo{
+        margin-left: 40%;
+        margin-top: 1%;
+        position: relative;
+        height: 60%
+    }
+    footer .tekstFooter{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 7%;
+        padding-right: 2%;
+    }
+    
+   .fab{
+        font-size: 30px;
+        color: var(--c-grijs);
+        padding:1%;
+    }
+    .fa-facebook-square{
+        position: absolute;
+        padding-left: 4%;
+    }
+    .fa-twitter-square{
+        position: absolute;
+        padding-left: 10%;
+    }
+    .fa-instagram{
+        position: absolute;
+        padding-left: 16%; 
+    }
+    .fa-snapchat-square{
+        position: absolute;
+        padding-left: 22%;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99999px) {
+    body {
+        background-color: var(--c-wg);
+    }
+    header{
+        display: block;
+        margin: 0;
+        width: 100%;
+        background-color:var(--c-wit);
+    }
+    .EDP{
+        width: 22%;
+    }
+    .Search{
+        margin-left: 75%;
+        margin-top: -5%;
+    }
+    .button{
+        background-color:var(--c-dw);
+        border:thin solid var(--c-grijs);
+        border-radius: 25px 0 0 25px;
+        cursor:pointer;
+        float:left;
+        height:20px;
+        text-align:center;
+        width:50px;
+    }
+    .button:hover{
+        background-color: var(--c-grijs);
+    }
+    .button i{
+        margin:4px;
+        font-size: 12px; 
+    }
+    .zoeken{
+        border:thin solid  var(--c-grijs);
+        border-radius: 0 25px 25px 0;
+        float:left;
+        height:9.5px;
+        outline:0;
+        padding:.4em 0 .4em .6em; 
+        width:150px; 
+    }
+    main{
+        padding-top: 5%;
+    }
+    .gebouwPic{
+        display: block;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .ronde{
+        padding: 1%;
+        width: 100%;
+
+    }
+    .circle{
+        display: flex;
+        justify-content: center;
+    }
+    .dot1{
+        margin: 2%;
+        width: 150px;
+        height: 150px;
+        font-family: var(--f-special);
+        color: var(--c-grijs);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dot{
+        margin: 2%;
+        width: 150px;
+        height: 150px;
+        font-family: var(--f-special);
+        color: var(--c-rood);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+    .textblock{
+        margin-left: 4%;
+        margin-right: 4%;   
+        text-align: center;
+    }
+    .titel{
+        color: var(--c-rood);
+        font-weight: bold;
+        font-size: 12pt;
+        float: center;
+    }
+    .subtitel{
+        color: var(--c-grijs);
+        font-size: 9pt;
+
+    }
+    .aside{
+        background-color: var(--c-rood);
+        padding-top: 5%;
+        padding-bottom: 40%
+    }
+    .asidePic{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        background-color: var(--c-dg);
+    }
+
+    footer .footerLogo{
+        margin-left: 40%;
+        margin-top: 1%;
+        position: relative;
+        height: 60%
+    }
+    footer .tekstFooter{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 12pt;
+        padding-left: 7%;
+        padding-right: 2%;
+    }
+    
+   .fab{
+        font-size: 30px;
+        color: var(--c-grijs);
+        padding:1%;
+    }
+    .fa-facebook-square{
+        position: absolute;
+        padding-left: 4%;
+    }
+    .fa-twitter-square{
+        position: absolute;
+        padding-left: 10%;
+    }
+    .fa-instagram{
+        position: absolute;
+        padding-left: 16%; 
+    }
+    .fa-snapchat-square{
+        position: absolute;
+        padding-left: 22%;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: var(--c-wg);
+    }
+    header{
+        display: block;
+        margin: 0;
+        width: 100%;
+        background-color:var(--c-wit);
+    }
+    .EDP{
+        width: 22%;
+    }
+    .Search{
+        margin-left: 77%;
+        margin-top: -5%;
+    }
+    .button{
+        background-color:var(--c-dw);
+        border:thin solid var(--c-grijs);
+        border-radius: 25px 0 0 25px;
+        cursor:pointer;
+        float:left;
+        height:27px;
+        text-align:center;
+        width:50px;
+    }
+    .button:hover{
+        background-color: var(--c-grijs);
+    }
+    .button i{
+        margin:4px;
+        width:20px; 
+    }
+    .zoeken{
+        border:thin solid  var(--c-grijs);
+        border-radius: 0 25px 25px 0;
+        float:left;
+        height:16px;
+        outline:0;
+        padding:.4em 0 .4em .6em; 
+        width:183px; 
+    }
+    main{
+        padding-top: 5%;
+    }
+    .gebouwPic{
+        display: block;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .ronde{
+        padding: 1%;
+        width: 100%;
+
+    }
+    .circle{
+        display: flex;
+        justify-content: center;
+    }
+    .dot1{
+        margin: 2%;
+        width: 200px;
+        height: 200px;
+        font-family: var(--f-special);
+        color: var(--c-grijs);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dot{
+        margin: 2%;
+        width: 200px;
+        height: 200px;
+        font-family: var(--f-special);
+        color: var(--c-rood);
+        background-color: var(--c-wit);
+        border-radius: 50%;
+        line-height: 180px;
+        font-size: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+    .textblock{
+        margin-left: 6%;
+        margin-right: 6%;   
+        text-align: center;
+    }
+    .titel{
+        color: var(--c-rood);
+        font-weight: bold;
+        font-size: 14pt;
+        float: center;
+    }
+    .subtitel{
+        color: var(--c-grijs);
+        font-size: 11pt;
+
+    }
+    .aside{
+        background-color: var(--c-rood);
+        padding-top: 5%;
+        padding-bottom: 37%
+    }
+    .asidePic{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 200px;
+        background-color: var(--c-dg);
+    }
+
+    footer .footerLogo{
+        margin-left: 40%;
+        margin-top: 1%;
+        position: relative;
+        height: 80%
+    }
+    footer .tekstFooter{
+        float: right;
+        color: var(--c-grijs);
+        font-size: 14pt;
+        padding-left: 15%;
+        padding-right: 2%;
+    }
+    
+   .fab{
+        font-size: 40px;
+        color: var(--c-grijs);
+        padding:1%;
+    }
+    .fa-facebook-square{
+        position: absolute;
+        padding-left: 4%;
+    }
+    .fa-twitter-square{
+        position: absolute;
+        padding-left: 10%;
+    }
+    .fa-instagram{
+        position: absolute;
+        padding-left: 16%; 
+    }
+    .fa-snapchat-square{
+        position: absolute;
+        padding-left: 22%;
+    }
+}
